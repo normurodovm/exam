@@ -1,7 +1,7 @@
 import GetItem from "@/services/query/get-phone"
 import { Button } from "@/components/ui/button";
 
-export const Phone = async () => {
+ const Phone = async () => {
     const data = await GetItem();
     return(
         <div className="flex flex-wrap gap-7 mt-[70px]">
@@ -17,3 +17,6 @@ export const Phone = async () => {
     </div>
     )
 } 
+
+
+export default Phone

@@ -7,7 +7,7 @@ import {
 } from "@/components/ui/carousel";
 import GetBanner from "@/services/query/get-banner";
 import GetCatalog from "@/_components/get-gatalog";
-import { Phone } from "@/_components/phones";
+import Phone from "@/_components/phones";
 import { Computers } from "@/_components/computers";
 export default async function Home() {
   const data = await GetBanner();
@@ -40,7 +40,7 @@ export default async function Home() {
           <div className="mt-[30px] ml-10">
             <h2 className="font-bold text-[32px]">Telefonlar</h2>
             <Phone/>
-            <h2 className="font-bold text-[32px] mt-[30px]">Compyuterlar</h2>
+            <h2 className="font-bold text-[32px] mt-[30p]">Compyuterlar</h2>
             <Computers/>
           </div>
       </div>
