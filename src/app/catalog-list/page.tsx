@@ -1,5 +1,13 @@
-import { CatalogType } from "@/types/catalog-type";
 import { NextPage } from "next";
+
+
+
+ interface CatalogType {
+  id:number;
+  img:string;
+  text:string;
+  name:string;
+}
 
 const CatalogList:NextPage<CatalogType> = ({ name }) => {
   return (
