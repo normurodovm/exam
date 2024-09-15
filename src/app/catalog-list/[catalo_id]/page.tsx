@@ -33,7 +33,7 @@ const CatalogDetail: NextPage<CatalogProps> = async ({ params }) => {
     const items = await GetItem()
   return (
     <div className="flex flex-wrap gap-7 mt-[70px]">
-        {items.map((item)=> <div className="bg-white w-[262px] p-4 rounded-[9px]">
+        {items.map((item)=> <div key={item.id} className="bg-white w-[262px] p-4 rounded-[9px]">
           <img className="w-[262px] h-[262px]" src={item.img} alt="img" />
           <h2 className="text-[14px] font-normal">{item.title}</h2>
           <p>{item.rame}</p>
