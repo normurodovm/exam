@@ -1,5 +1,4 @@
 import { CatalogType } from "@/types/catalog-type";
-import React from "react";
 
 export const CatalogList: React.FC<CatalogType> = ({ name }) => {
   return (
