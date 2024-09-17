@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { NextPage } from "next";
+import Link from "next/link";
 
 interface CatalogProps {
   params: { catalo_id: string };
@@ -34,7 +35,9 @@ const CatalogDetail: NextPage<CatalogProps> = async ({ params }) => {
   return (
     <div className="flex flex-wrap gap-7 mt-[70px]">
         {items.map((item)=> <div key={item.id} className="bg-white w-[262px] p-4 rounded-[9px]">
+        <Link href={`/product/${item.id}`}>
           <img className="w-[262px] h-[262px]" src={item.img} alt="img" />
+        </Link>
           <h2 className="text-[14px] font-normal">{item.title}</h2>
           <p>{item.rame}</p>
           <p>{item.color}</p>

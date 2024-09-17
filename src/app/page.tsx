@@ -13,15 +13,16 @@ export default async function Home() {
   const data = await GetBanner();
 
   return (
-  <div className="flex">
-          <div className="w-[280px] bg-white h-screen ">
-      <div className="ml-[20px]">
+  <div className="flex ">
+          <div className="w-72  bg-white pr-[50px] pl-[20px] h-screen ">
+      <div className="ml-[0px] w-full">
+
           <GetCatalog/>
       </div>
       </div>
       <div>
       <div className="relative">
-            <Carousel className="w-[1086px] ml-[40px] mt-[24px]">
+            <Carousel className="w-[1086px] ml-[170px] mt-[24px]">
               <CarouselContent>
                 {data.map((item, index) => (
                   <CarouselItem key={index} className="relative">

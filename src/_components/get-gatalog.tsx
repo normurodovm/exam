@@ -20,7 +20,7 @@ import { Catalog } from "@/_components/catalog";
 export default async function GetCatalog() {
   const data = await Getdata();
   return (
-    <div className="">
+    <div>
       {data?.map((item) => (
         <Catalog
           key={item.id}

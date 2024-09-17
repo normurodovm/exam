@@ -22,6 +22,7 @@
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
     --border: 240 5.9% 90%;
+    --button:0 0% 4%;
     --input: 240 5.9% 90%;
     --ring: 240 10% 3.9%;
     --chart-1: 12 76% 61%;
@@ -69,4 +70,16 @@
 }
 body{
   background: #F6F8FA;
+}
+.search_item{
+  width: 60px;
+}
+
+
+.show{
+  width: 150px;
+  text-align: center;
+  padding: 9px;
+  border-radius: 9px;
+  color: white;
 }

@@ -7,7 +7,7 @@ export default function CatalogListLayout({
   }) {
     return (
       <div className="flex">
-          <div className="w-[280px] bg-white h-screen ">
+          <div className="w-[280px] bg-white h-screen pr-[50px] pl-[20px] ">
       <div className="ml-[20px]">
           <GetCatalog/>
           <Link className="ml-[17px] mt-4" href={"/"}>home</Link>
