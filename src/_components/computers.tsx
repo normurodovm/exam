@@ -16,7 +16,7 @@ export const Computers = async () => {
         price={item.price ? parseFloat(item.price) : 0} // price ni number ga aylantirish
       />
     ))}
-  </div>
+  </div>  
     )
   }       
     //     <div className="flex flex-wrap gap-7 mt-[70px]">

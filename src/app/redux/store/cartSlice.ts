@@ -1,5 +1,6 @@
 "use client";
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+
 export interface Phonetype {
   id: number;
   title: string;
@@ -7,7 +8,7 @@ export interface Phonetype {
   price: number;
   rame: string;
   color: string;
-  quantity: number;
+  quantity: number; // Ensure quantity is always present
 }
 
 const getCartFromLocalStorage = (): Phonetype[] => {
@@ -81,4 +82,5 @@ export const {
   incrementQuantity,
   decrementQuantity,
 } = cartSlice.actions;
+
 export default cartSlice.reducer;

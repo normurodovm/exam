@@ -21,8 +21,6 @@ const ItemCart: React.FC<ItemCartProps> = ({ id, title, img, price, rame, color 
   const [addedToCart, setAddedToCart] = useState(false);
 
   useEffect(() => {
-    // Mahsulot savatchaga qo'shilganligini tekshirish
-    // Qo'shilgan mahsulot holatini redux yoki mahalliy xotira bilan boshqarishingiz mumkin
   }, [id]);
 
   const handleAddToCart = useCallback(() => {
