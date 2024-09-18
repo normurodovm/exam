@@ -134,16 +134,23 @@
 
 
 
-
 import GetItem from "@/services/query/get-phone";
 import ItemCart from "./item-cart";
 
 const Phone = async () => {
-  const data = await GetItem(); 
+  const data = await GetItem();
   return (
     <div className="flex flex-wrap gap-7 mt-[70px]">
-      {data.map((item) => (
-        <ItemCart key={item.id} {...item} />
+      {data?.map((item) => (
+        <ItemCart
+          key={item.id}
+          id={item.id}
+          title={item.title}
+          img={item.img}
+          rame={item.rame}
+          color={item.color}
+          price={item.price ? parseFloat(item.price) : 0} // price ni number ga aylantirish
+        />
       ))}
     </div>
   );

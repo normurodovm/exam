@@ -22,7 +22,7 @@ export default async function Home() {
       </div>
       <div>
       <div className="relative">
-            <Carousel className="w-[1086px] ml-[170px] mt-[24px]">
+            <Carousel className="w-[1086px] ml-[70px] mt-[24px]">
               <CarouselContent>
                 {data.map((item, index) => (
                   <CarouselItem key={index} className="relative">
@@ -40,9 +40,13 @@ export default async function Home() {
           </div>
           <div className="mt-[30px] ml-10">
             <h2 className="font-bold text-[32px]">Telefonlar</h2>
+            <div className="container">
             <Phone/>
-            <h2 className="font-bold text-[32px] mt-[30p]">Compyuterlar</h2>
+            </div>
+            <h2 className="font-bold text-[32px] mt-[30px]">Compyuterlar</h2>
+            <div className="container">
             <Computers/>
+            </div>
           </div>
       </div>
   </div>

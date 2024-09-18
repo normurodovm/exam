@@ -7,7 +7,7 @@ export interface Phonetype {
     rame:string;
     color:string;
     title:string;
-    price:string;
+    price?:string ;
     img:string;
 }
 
